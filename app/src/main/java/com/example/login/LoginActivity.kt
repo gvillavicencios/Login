@@ -35,6 +35,7 @@ class LoginActivity : AppCompatActivity() {
 
             //Get Data and prepare variable
             val myUserData = UserLoginData(txtEmailObj.editText!!.text.toString(), txtPwdObj.editText!!.text.toString())
+            //Try to send
             val myIntent = Intent(this,WelcomeActivity::class.java)
             myIntent.putExtra("usrInformation", myUserData)
             startActivity(myIntent)

@@ -6,9 +6,9 @@
     <string name="bt_login">Log In</string>
     <string name="bt_sign">Sign Up for Facebook</string>
     <string name="bt_help">Need Help?</string>
-    <string name="title_activity_detail">Bienvenido..</string>
-    <string name="title_username_detail">Tu usuario es..</string>
-    <string name="title_password_detail">Cuida tu password..</string>
+    <string name="title_activity_detail">Bienvenido(a)</string>
+    <string name="title_username_detail">Tu usuario: </string>
+    <string name="title_password_detail">Tu clave: </string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
