@@ -5,14 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import com.example.login.R.id.emailInput
 import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 
 class LoginActivity : AppCompatActivity() {
 
 
     //Object Declare
-    private lateinit var txtEmailObj : TextInputEditText
-    private lateinit var txtPwdObj : TextInputEditText
+    private lateinit var txtEmailObj : TextInputLayout
+    private lateinit var txtPwdObj : TextInputLayout
     private lateinit var btnLogIn : Button
 
 
@@ -22,12 +24,16 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         // Get Values
-        txtEmailObj= findViewById(R.id.emailInput)
+        txtEmailObj= findViewById(emailInput)
         txtPwdObj= findViewById(R.id.passwordInput)
 
         //Get Object and try the intent
         btnLogIn= findViewById(R.id.btnLogin)
 
+        btnLogIn.setOnClickListener(){
+            val myIntent = Intent(this,WelcomeActivity::class.java)
+            startActivity(myIntent)
+        }
 
     }
 }
