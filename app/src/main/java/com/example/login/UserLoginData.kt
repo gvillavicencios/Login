@@ -3,12 +3,12 @@ package com.example.login
 import android.os.Parcel
 import android.os.Parcelable
 
-data class UserLoginData(val email:String, val passwordKey: String): Parcelable {
+data class UserLoginData(val emailKey:String, val passwordKey: String): Parcelable {
     constructor(parcel: Parcel) : this(parcel.readString()?:"", parcel.readString()?:"") {
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeString(email)
+        parcel.writeString(emailKey)
         parcel.writeString(passwordKey)
     }
 
