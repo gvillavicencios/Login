@@ -21,11 +21,11 @@ android:background="@color/fb_Color">
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/email_title"
         android:layout_below="@id/imageViewLogo">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/email_title"
             android:inputType="textEmailAddress"
             android:imeOptions="actionDone"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -46,18 +46,19 @@ android:background="@color/fb_Color">
             android:imeOptions="actionDone"
             />
     </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/btnLogin"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
         android:layout_height="60dp"
-        android:text="@string/bt_login"
         android:layout_below="@id/passwordInput"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="#9FA8DA"
+        android:text="@string/bt_login"
         android:textAllCaps="false"
-        android:textSize="20sp"
-        />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnSign"
